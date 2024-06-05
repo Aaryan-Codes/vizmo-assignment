@@ -6,13 +6,14 @@ const Post = require("../Models/blogModel");
 
 router.post("/add-post", authMiddleware, async (req, res) => {
   try {
-    const { title, content, author } = req.body;
+    const { title, content, author,images } = req.body;
     const userID = req.body.userID;
     // console.log(req.body);
     const newPost = new Post({
       title,
       content,
       author,
+      images,
       postedBy: userID,
     });
     await newPost.save();
