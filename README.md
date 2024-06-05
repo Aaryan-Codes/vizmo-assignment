@@ -1,5 +1,5 @@
 <h1>Vizmo - Backend Development Assessment</h1>
-<p>General Highlight</p>
+<h2>General Highlight</h2>
 <ul>
   <li>Impleted a custom authentication middleware for user authentication using JWT(jsonwebtoken)</li>
   <li>Used bcrypt to encryt the user password</li>
